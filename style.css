@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+body{font-family:Arial, sans_serif; background:#111; color:#eee; margin:0; padding:20px}
+.container{max-width:900px; margin:0 auto;}
+header h1{color:#e11d48; margin:0 0 6px;}
+.lead{color:#ccc; margin-bottom:12px;}
+.card{background:#1a1a1a; padding:16px; border-radius:10px;box-shadow:0 4px 12px rgba(0, 0, 0, 0.7); margin-bottom:16px;}
+label{display:block; margin:8px 0;}
+input{padding:6px 8px; margin-left:8px; border-radius:6px; border:none;}
+button{padding:8px 12px; border-radius:8px; border:none; background:#e11d48; color:white; cursor:pointer; margin-right:8px; transition:0.2s;}
+button:hover{background:#ff294d;}
+button.secondary{background:#880d2f}
+button.secondary:hover{background:#b71c3c}
+.hidden{display:none}
+.timeline{min-height:80px; display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
+.title{nackground:#330000; padding:8px 10px; border-radius:8px; box-shadow:0 2px 6px rgba(0, 0, 0, 0.5); min-width:120px; text-align:center; color:#fff;}
+.meta{color:#ccc; margin-top:4px;}
+.playerControls{margin-top:10px;}
+.feedback{margin-top:10px; color:#ff4d6d;}
+footer{color:#aaa; text-align:center; margin-top:18px;}
