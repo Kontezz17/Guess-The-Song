@@ -1,56 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Guess The Song</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hitster — gra muzyczna</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
-	<header>
-		<h1>Guess The Song</h1>
-		<p class="lead">Układaj piosenki chronologicznie. Kliknij ▶️, aby odtworzyć fragment z YouTube.</p>
-	</header>
-	
-	<main>
-		<section id="gameSetup" class="card">
-			<h2>Ustawienia gry</h2>
-			<label>Ilość piosenek:
-				<input id="count" type="number" min="5" max="30" value="10">
-			</label>
-			<button id="startBtn">Start</button>
-		</section>
-		
-		<section id="board" class="card hidden">
-			<h2>Oś czasu</h2>
-			<div id="timeline" class="timeline></div>
-			<button id="nextCard" class="secondary hidden">Następna piosenka</button>
-		</section>
-	
-		<section id="player: class="card hidden">
-			<h2>Aktualna piosenka</h2>
-			<div id="songTitle">Kliknij ▶️ aby rozpocząć</div>
-			<div id="playerArea"></div>
-			<div class="playerControls">
-				<button id="playBtn">▶️ Odtwórz fragment</button>
-				<button id="placeLeft">⬅️ Umieść PRZED</button>
-				<button id="placeRight">→ Umieść PO</button>
-			</div>
-			<div id="feedback" class="feedback"></div>
-		</section>
-		
-		<section id="results" class="card hidden">
-			<h2>Wyniki</h2>
-			<div id="resultsInner"></div>
-			<button id="restart">Zagraj ponownie</button>
-		</section>
-	</main>
-	
-	<footer>
-		<p>Projekt demonstracyjny - muzyka odtwarzana z YouTube embed.</p>
-	</footer>
+  <header>
+    <h1>Hitster — demo</h1>
+    <p class="lead">Układaj piosenki chronologicznie. Kliknij ▶️, aby odtworzyć fragment z YouTube.</p>
+  </header>
+
+  <main>
+    <section id="gameSetup" class="card">
+      <h2>Ustawienia gry</h2>
+      <label>Ilość piosenek: 
+        <input id="count" type="number" min="5" max="30" value="10">
+      </label>
+      <button id="startBtn">Start</button>
+    </section>
+
+    <section id="board" class="card hidden">
+      <h2>Oś czasu</h2>
+      <div id="timeline" class="timeline"></div>
+      <button id="nextCard" class="secondary hidden">Następna piosenka</button>
+    </section>
+
+    <section id="player" class="card hidden">
+      <h2>Aktualna piosenka</h2>
+      <div id="songTitle">Kliknij ▶ aby rozpocząć</div>
+      <div id="playerArea"></div>
+      <div class="playerControls">
+        <button id="playBtn">▶️ Odtwórz fragment</button>
+        <button id="placeLeft">⬅️ Umieść PRZED</button>
+        <button id="placeRight">➡️ Umieść PO</button>
+      </div>
+      <div id="feedback" class="feedback"></div>
+    </section>
+
+    <section id="results" class="card hidden">
+      <h2>Wyniki</h2>
+      <div id="resultsInner"></div>
+      <button id="restart">Zagraj ponownie</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projekt demonstracyjny — muzyka odtwarzana z YouTube embed.</p>
+  </footer>
 </div>
-<script src="scipt.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
